@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddCustomer">
+   <children>
+      <HBox prefHeight="48.0" prefWidth="600.0" style="-fx-background-color: #2D2D30;">
+         <children>
+            <AnchorPane prefHeight="60.0" prefWidth="601.0">
+               <children>
+                  <ImageView fitHeight="58.0" fitWidth="71.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/xing_200px.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="0.81" />
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="59.0" layoutY="21.0" style="-fx-text-fill: #AFB1B2;" text="LEDGER">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="552.0" prefWidth="600.0" style="-fx-background-color: #CDCDCD;">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="142.0" layoutX="234.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/admin1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="236.0" layoutY="119.0" text="ADD A PHOTO">
+               <font>
+                  <Font name="Arial Black" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="339.0" layoutY="117.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="23.0" text="..." />
+            <Label layoutX="18.0" layoutY="181.0" style="-fx-background-color: #AFB1B2;" text="FULL NAME">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/autograph.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Label>
+            <Label layoutX="321.0" layoutY="181.0" style="-fx-background-color: #AFB1B2;" text="USER NAME">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/username.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Label>
+            <Label layoutX="21.0" layoutY="253.0" style="-fx-background-color: #AFB1B2;" text="ADDRESS">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/address_60px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Label>
+            <Label layoutX="24.0" layoutY="372.0" style="-fx-background-color: #AFB1B2;" text="PHONE NO">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/phone.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Label>
+            <TextField fx:id="txtfullname" layoutX="18.0" layoutY="213.0" prefHeight="30.0" prefWidth="278.0" style="-fx-background-radius: 10;" />
+            <TextField fx:id="txtusername" layoutX="320.0" layoutY="213.0" prefHeight="30.0" prefWidth="278.0" style="-fx-background-radius: 10;" />
+            <TextArea fx:id="txtaddress" layoutX="20.0" layoutY="288.0" prefHeight="72.0" prefWidth="541.0" style="-fx-background-color: #F4F4F4;" />
+            <TextField fx:id="txtphoneno" layoutX="70.0" layoutY="411.0" prefHeight="30.0" prefWidth="202.0" style="-fx-background-radius: 10;" />
+            <Label layoutX="307.0" layoutY="376.0" style="-fx-background-color: #AFB1B2;" text="EMAIL">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/envelope.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TextField fx:id="txtemail" layoutX="307.0" layoutY="414.0" prefHeight="30.0" prefWidth="278.0" style="-fx-background-radius: 10;" />
+            <TextField layoutX="14.0" layoutY="414.0" prefHeight="23.0" prefWidth="42.0" style="-fx-background-radius: 10;" text="+234" />
+            <Button contentDisplay="RIGHT" layoutX="222.0" layoutY="457.0" mnemonicParsing="false" onMouseClicked="#resistercostumer" prefHeight="45.0" prefWidth="192.0" style="-fx-background-color: #2D2D30; -fx-text-fill: #AFB1B2;" text="REGISTER COSTUMER">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/add.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
