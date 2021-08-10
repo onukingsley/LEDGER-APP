@@ -1,5 +1,8 @@
 package sample;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import sample.CustomerData.CustomerData;
 import sample.util.DbConnection;
 
 import java.sql.ResultSet;
@@ -31,6 +34,16 @@ public ResultSet SelectAll(String username, String Password, String table) throw
         return !super.Insert(new String[]{"FullName","UserName","Address","PhoneNo","Email"},new String[]{Name,Username,Address,phoneNo,Email},table);
 
     }
-}
+
+   /* public boolean loadcustomer() throws SQLException {
+        ObservableList<CustomerData> data;
+        data = FXCollections.observableArrayList();
+        super.loaddata("customer");
+        while (rs.next()){
+           return data.add(new CustomerData(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getString(5),rs.getString(6)));
+        }
+        return false;*/
+    }
+
 
 

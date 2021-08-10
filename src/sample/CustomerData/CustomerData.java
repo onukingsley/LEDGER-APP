@@ -1,10 +1,12 @@
 package sample.CustomerData;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 public class CustomerData {
-    private StringProperty id;
+    private IntegerProperty id;
     private StringProperty fullname;
     private StringProperty username;
     private StringProperty address;
@@ -13,8 +15,8 @@ public class CustomerData {
 
     public CustomerData(){}
 
-    public CustomerData(String id, String fullname, String username, String address, String phoneNo, String email) {
-        this.id = new SimpleStringProperty(id);
+    public CustomerData(int id, String fullname, String username, String address, String phoneNo, String email) {
+        this.id = new SimpleIntegerProperty(id);
         this.fullname = new SimpleStringProperty(fullname);
         this.username = new SimpleStringProperty(username);
         this.address = new SimpleStringProperty(address);
@@ -22,15 +24,15 @@ public class CustomerData {
         this.email = new SimpleStringProperty(email);
     }
 
-    public String getId() {
+    public int getId() {
         return id.get();
     }
 
-    public StringProperty idProperty() {
+    public IntegerProperty idProperty() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id.set(id);
     }
 

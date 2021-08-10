@@ -48,6 +48,7 @@ public class AddCustomer {
 
     @FXML
     void resistercostumer(MouseEvent event) throws SQLException {
+
         cm.insertcustomer(getTxtfullname(),getTxtusername(),getTxtaddress(),getTxtphoneno(),getTxtemail());
         txtfullname.setText("");txtaddress.setText("");txtusername.setText("");txtemail.setText("");txtphoneno.setText("");
     }

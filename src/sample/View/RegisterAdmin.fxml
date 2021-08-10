@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.registerAdminController">
+   <children>
+      <AnchorPane prefHeight="551.0" prefWidth="591.0" stylesheets="@../Css/Style.css">
+         <children>
+            <HBox layoutX="3.0" layoutY="423.0" prefHeight="60.0" prefWidth="435.0">
+               <children>
+                  <AnchorPane prefHeight="76.0" prefWidth="482.0">
+                     <children>
+                        <Button layoutX="200.0" layoutY="20.0" minHeight="-Infinity" mnemonicParsing="false" onMouseClicked="#register" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #AFB1B3; -fx-text-fill: #2D2D30;" text="SIGN UP">
+                           <font>
+                              <Font name="Ebrima Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <Pane layoutX="124.0" layoutY="44.0" prefHeight="101.0" prefWidth="206.0">
+               <children>
+                  <ImageView fitHeight="127.0" fitWidth="134.0" layoutX="69.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/admin1.png" />
+                     </image>
+                  </ImageView>
+                  <AnchorPane layoutX="-100.0" layoutY="36.0" prefHeight="136.0" prefWidth="212.0">
+                     <children>
+                        <HBox layoutX="116.0" layoutY="59.0" prefHeight="29.0" prefWidth="200.0">
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                           <children>
+                              <Label prefHeight="31.0" prefWidth="164.0" text="UPLOAD A PICTURE">
+                                 <font>
+                                    <Font name="Engravers MT" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="102.0" layoutY="88.0" prefHeight="36.0" prefWidth="200.0">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="97.0" text="OPEN FILE">
+                                 <font>
+                                    <Font name="Engravers MT" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Button mnemonicParsing="false" style="-fx-background-color: #AFB1B3;">
+                                 <graphic>
+                                    <ImageView fitHeight="22.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Images/envelope.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </Pane>
+            <Label layoutX="13.0" layoutY="248.0" text="NAME">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/autograph_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TextField fx:id="txtname" layoutX="75.0" layoutY="240.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="192.0" />
+            <Label layoutX="12.0" layoutY="308.0" text="USERNAME">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/admin1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TextField fx:id="txtusername" layoutX="104.0" layoutY="304.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="150.0" />
+            <Label layoutX="261.0" layoutY="309.0" text="EMAIL ">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/envelope.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TextField fx:id="txtemail" layoutX="324.0" layoutY="303.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="192.0" />
+            <Label layoutX="276.0" layoutY="246.0" text="PASSWORD">
+               <graphic>
+                  <ImageView fitHeight="29.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/key.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="10.0" layoutY="370.0" text="MOBILE NO">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/phone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <TextField layoutX="109.0" layoutY="365.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="51.0" text="+234" />
+            <TextField fx:id="txtphone" layoutX="164.0" layoutY="365.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="179.0" />
+            <TextField fx:id="txtpassword" layoutX="372.0" layoutY="242.0" minHeight="-Infinity" prefHeight="35.0" prefWidth="136.0" />
+            <HBox alignment="CENTER_RIGHT" layoutX="1.0" layoutY="518.0" prefHeight="36.0" prefWidth="520.0">
+               <children>
+                  <Label text="Already have an account, ">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink onMouseClicked="#gotologin" style="-fx-text-fill: white;" text="Log in" textFill="#c9ffff">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+            <ImageView fitHeight="156.0" fitWidth="150.0" layoutX="358.0" layoutY="354.0" opacity="0.04" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/xing_200px.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="0.38" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../Css/caspian.css" />
+      <URL value="@../Css/Style.css" />
+   </stylesheets>
+</VBox>

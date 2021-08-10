@@ -74,7 +74,7 @@ public class Login{
         txtloginpassword.setText("");
 */
     }
-    public void alert(String title, String text, String context){
+    public static void alert(String title, String text, String context){
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
         alert.setHeaderText(text);
